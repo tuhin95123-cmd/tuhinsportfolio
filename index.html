@@ -4,57 +4,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Tuhin | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    
 </head>
 
 <body>
+    <header class="site-header">
+        <a href="#home" class="logo">Tuhin</a>
 
-    <head>
-        <a href="#" class="logo">Tuhin</a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa fa-bars"></i>
+        </label>
 
-        <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Skills</a>
-            <a href="#">Education</a>
-            <a href="#">Experience</a>
-            <a href="#">Contact</a>
-
+        <nav class="main-nav">
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
         </nav>
-    </head>
-    <section class="home">
-        <div class="home-img">
-            <img src="img/my-image.jpg" alt="">
-        </div>
-        <div class="home-content">
-            <h1>Hi,it's<span>Tuhin</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Lorem ipsum dolor sit,amet consectetur adipisicing elit.Minus labore dolor esse.odit similiqu tenetur
-                doloremque ,sunt commodi in ipsa repudianda debitis deleniti asperiores ea.</p>
-            <div class="social-icons">
-             <a href="https://www.facebook.com/profile.php?id=61588009760124" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>
-             </a>
+    </header>
 
-             <a href="https://www.instagram.com/its_tuhin_i/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-             </a>
-
-             <a href="https://www.youtube.com/@EmpireofForex" target="_blank">
-                <i class="fa-brands fa-youtube"></i>
-             </a>
-             <a href="https://github.com/tuhin95123-cmd" target="_blank">
-             <i class="fa-brands fa-github"></i>
-             </a>
-
+    <main>
+        <section id="home" class="home section">
+            <div class="home-content">
+                <span class="section-subtitle">Welcome</span>
+                <h1 class="section-title">Hi, I’m <span>Tuhin</span></h1>
+                <p class="section-text">I am a dedicated and passionate web developer specializing in modern responsive
+                    design, frontend development, and creative digital experiences.</p>
+                <div class="home-buttons">
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="#services" class="btn btn-secondary">View Services</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61588009760124" target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/its_tuhin_i/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@EmpireofForex" target="_blank"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/tuhin95123-cmd" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
             </div>
-            <a href="#" class="btn">Hire me</a>
-        </div>
-    </section>
+            <div class="home-image">
+                <img src="img/my-image.jpg" alt="Tuhin profile picture">
+            </div>
+        </section>
+
+        <section id="services" class="section services">
+            <div class="section-heading">
+                <span class="section-subtitle">What I do</span>
+                <h2 class="section-title">Services</h2>
+            </div>
+            <div class="cards-grid">
+                <article class="card">
+                    <i class="fa-solid fa-code card-icon"></i>
+                    <h3>Web Development</h3>
+                    <p>Responsive websites with modern HTML, CSS, and JavaScript for desktop, tablet, and mobile
+                        experience.</p>
+                </article>
+                <article class="card">
+                    <i class="fa-solid fa-paint-brush card-icon"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Clean design layouts and intuitive interfaces that help visitors engage with your brand.</p>
+                </article>
+                <article class="card">
+                    <i class="fa-solid fa-mobile-screen-button card-icon"></i>
+                    <h3>Responsive Support</h3>
+                    <p>Fast-loading cross-device pages and optimized visuals for every screen size.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <div class="section-heading">
+                <span class="section-subtitle">My strengths</span>
+                <h2 class="section-title">Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>HTML</h3>
+                    <div class="skill-bar"><span class="skill-fill html-fill"></span></div>
+                </div>
+                <div class="skill-card">
+                    <h3>CSS</h3>
+                    <div class="skill-bar"><span class="skill-fill css-fill"></span></div>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar"><span class="skill-fill js-fill"></span></div>
+                </div>
+                <div class="skill-card">
+                    <h3>React</h3>
+                    <div class="skill-bar"><span class="skill-fill react-fill"></span></div>
+                </div>
+                <div class="skill-card">
+                    <h3>Git & GitHub</h3>
+                    <div class="skill-bar"><span class="skill-fill git-fill"></span></div>
+                </div>
+                <div class="skill-card">
+                    <h3>Figma</h3>
+                    <div class="skill-bar"><span class="skill-fill figma-fill"></span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section timeline">
+            <div class="section-heading">
+                <span class="section-subtitle">Academic path</span>
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="timeline-grid">
+                <article class="timeline-item">
+                    <span class="timeline-date">2023 - Present</span>
+                    <h3>Web Development Training</h3>
+                    <p>Online and self-guided training in HTML, CSS, JavaScript, responsive design, and Git version
+                        control.</p>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-date">2021 - 2023</span>
+                    <h3>Higher Secondary Education</h3>
+                    <p>Studies focused on computer science, mathematics, and creative design projects.</p>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-date">2019 - 2021</span>
+                    <h3>Secondary Education</h3>
+                    <p>Completed strong foundation in science and technology, developing problem-solving skills.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="experience" class="section experience">
+            <div class="section-heading">
+                <span class="section-subtitle">Work & projects</span>
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <div class="timeline-grid">
+                <article class="timeline-item">
+                    <span class="timeline-date">2024</span>
+                    <h3>Freelance Developer</h3>
+                    <p>Built portfolio websites and landing pages for small businesses and personal brands.</p>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-date">2023</span>
+                    <h3>Internship / Video Editing</h3>
+                    <p>Worked on multimedia content, visual storytelling, and digital presentation projects.</p>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-date">2022</span>
+                    <h3>Personal Projects</h3>
+                    <p>Created responsive website templates, interactive forms, and content-driven layouts.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="section-heading">
+                <span class="section-subtitle">Let’s connect</span>
+                <h2 class="section-title">Contact</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <article class="info-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+880 1753596414</p>
+                    </article>
+                    <article class="info-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>tuhin95123@email.com</p>
+                    </article>
+                    <article class="info-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>Location</h3>
+                        <p>Dhaka, Bangladesh</p>
+                    </article>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Write your message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Tuhin. Built with passion for responsive design.</p>
+    </footer>
 </body>
 
 </html>
